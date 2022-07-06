@@ -4,8 +4,8 @@
   "description": "Talleta mielenkiinoisia blogeja",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "test": "jest --verbose"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,10 @@
     "mongoose": "^6.4.2"
   },
   "devDependencies": {
+    "jest": "^28.1.2",
     "nodemon": "^2.0.18"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
