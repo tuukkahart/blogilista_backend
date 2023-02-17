@@ -22,4 +22,8 @@ test('json length is right', async () => {
     expect(response.body).toHaveLength(helper.initialBlogs.length)
 })
 
-test('deleting')
+test('identifier name is id', async () => {
+    const response = await api.get('/api/blogs')
+    expect(response.body[0].id).toBeDefined()
+})
+
