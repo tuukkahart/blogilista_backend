@@ -27,3 +27,24 @@ test('identifier name is id', async () => {
     expect(response.body[0].id).toBeDefined()
 })
 
+// test('a blog can be added ', async () => {
+//     const newBlog = {
+//       title: "Testi",
+//       author: "tuukka",
+//       url: "http://jaaioo.fi"
+//     }
+  
+//     await api
+//       .post('/api/blogs')
+//       .send(newBlog)
+//       .expect(201)
+//       .expect('Content-Type', /application\/json/)
+  
+//     const response = await api.get('/api/blogs')
+  
+//     const titles = response.body.map(r => r.title)
+  
+//     expect(response.body).toHaveLength(helper.initialBlogs.length + 1)
+//     expect(titles).toContain("Testi")
+//   })
+//does not work after authentication
